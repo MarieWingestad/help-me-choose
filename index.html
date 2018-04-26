@@ -3,7 +3,7 @@
 <head>
   <meta charset=utf-8>
   <title>Help me choose</title>
-<link href="main.css" rel="stylesheet" type="text/css">  
+<link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <h1>Help me choose between..</h1>
@@ -13,7 +13,21 @@
     </div>
     <button class="addOption">Add</button>
 </div>
+<div class="resultSection"></div>
 <button>Go!</button>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+  $(function(){
+    $('.resultSection').hide()
+  })
+
+  var add_option=function(){
+    $('.inputs').append('<input></input')
+  }
+
+  $('.addOption').click(add_option)
+</script>
 <img src="beach.jpeg" alt="beach"/>
 </body>
 </html>
